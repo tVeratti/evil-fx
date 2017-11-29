@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
-import Visor from './Visor.js';
+import ParallaxOverlay from './_shared/ParallaxOverlay.js';
+import ArmorImage from './images/evilfxarmor.jpg';
 
 import './App.css';
 
@@ -8,12 +9,13 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Visor />
+        <ParallaxOverlay id="armor" alt="Armor" src={ArmorImage} />
+
         <div className="main">
           <h3>Latest News</h3>
           <div className="panel">
           Be sure to follow me on Facebook and Twitch via the links on the bottom of the page to see the latest Updates and live cam feeds from the workshop.
-        ​ <br /><br />
+      ​   <br /><br />
           I still have much to add to this site and not much free time to do it in so please be patient as I get things sorted.​
           <br /><br />
           CURRENT COMMISSIONS STATUS:

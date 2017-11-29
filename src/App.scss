@@ -1,3 +1,39 @@
-#app {
-    font-size: 12px;
+@import "reset";
+@import "https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:800|Ubuntu";
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background: #222;
+    color: #ccc;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.main {
+    padding: 20px;
+    width: 80%;
+    max-width: 1116px;
+    margin: auto;
+}
+h3 {
+    color: rgb(236, 196, 143);
+    font-size: 24px;
+    //border-bottom: 1px solid rgb(236, 143, 143);
+}
+ $orange: rgb(236, 196, 143);
+ $red: rgb(236, 143, 143);
+
+.panel {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid $orange;
+    border-top-right-radius: 10px;
+    border-bottom: none;
+    border-left: none;
+    background: rgba(white, 0.1);
+
 }

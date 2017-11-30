@@ -1,19 +1,28 @@
-.parallax, .parallax__image {
+.parallax, .parallax__image,
+.parallax__trace {
   position: fixed;
   pointer-events: none; }
 
 .parallax__achor {
   position: relative; }
 
-.parallax__image {
+.parallax__image,
+.parallax__trace {
   top: 0;
   left: 0;
   z-index: 99999; }
 
+.parallax__trace {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out; }
+  .parallax__trace.parallax__trace--hidden {
+    opacity: 0; }
+
 #p_armor {
   top: 0;
   left: 0; }
-  #p_armor .parallax__image {
+  #p_armor .parallax__image,
+  #p_armor .parallax__trace {
     width: 400px;
     height: auto;
     transform: translateX(-50px); }

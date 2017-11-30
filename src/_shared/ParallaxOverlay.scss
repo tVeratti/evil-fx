@@ -1,18 +1,26 @@
 .parallax { position: fixed; pointer-events: none; }
 .parallax__achor { position: relative; }
 
-.parallax__image {
+.parallax__image,
+.parallax__trace {
   @extend .parallax;
   top: 0;
   left: 0;
   z-index: 99999;
 }
 
+.parallax__trace {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  &.parallax__trace--hidden { opacity: 0; }
+}
+
 
 #p_armor {
   top: 0;
   left: 0;
-  .parallax__image {
+  .parallax__image,
+  .parallax__trace {
     width: 400px;
     height: auto;
     transform: translateX(-50px);

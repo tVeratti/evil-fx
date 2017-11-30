@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Header from './Header.js';
 import ParallaxOverlay from './_shared/ParallaxOverlay.js';
-import ArmorImage from './images/evilfxarmor.png';
+import { src, trace } from './images/evilfxarmor.png';
 import Carousel from './_shared/Carousel.js';
 
 // Line-height
@@ -18,7 +18,7 @@ class App extends Component {
         <Carousel />
         <Header />
 
-        <ParallaxOverlay id="armor" alt="Armor" src={ArmorImage} />
+        <ParallaxOverlay id="armor" alt="Armor" src={src} trace={trace} />
 
         <div className="main">
 

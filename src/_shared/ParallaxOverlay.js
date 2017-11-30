@@ -9,11 +9,13 @@ export default class extends Component {
     src: ''
   };
 
-  state = { top: 0 };
+  state = { top: 0, loaded: false };
 
   render(){
-    const { id, alt, src } = this.props;
-    const { top } = this.state;
+    const { id, alt, src, trace } = this.props;
+    const { top, loaded } = this.state;
+
+    const traceClassName = `parallax__trace ${loaded ? 'parallax__trace--hidden' : '' }`;
     
     return ( 
       <div id={`p_${id}`} className="parallax">
@@ -23,7 +25,16 @@ export default class extends Component {
             style={{ top }}
             alt={alt}
             src={src}
+            onLoad={this.loaded}
           />
+          { trace &&
+            <img className={traceClassName}
+              ref="trace"
+              style={{ top }}
+              alt={alt}
+              src={trace}
+            />
+          }
         </div>
       </div>
     );
@@ -36,13 +47,13 @@ export default class extends Component {
 
   scroll = e => {
     const { speed } = this.props;
-    const { image } = this.refs;
-    const height = image.offsetHeight;
-    const bodyHeight = document.body.offsetHeight;
     const scrolltop = window.pageYOffset;
     const offset = -scrolltop * speed;
     const top = `${offset}px`;
-    //if (height + offset > window.outerHeight)
     this.setState({ top });
   };
+
+  loaded = e => {
+    this.setState({ loaded: true });
+  }
 }

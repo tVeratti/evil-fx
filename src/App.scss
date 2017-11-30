@@ -1,39 +1,105 @@
 @import "reset";
+@import "./_shared/colors";
+
 @import "https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:800|Ubuntu";
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 html, body {
     margin: 0;
     height: 100%;
+}
+
+#root {
+    min-width: 90px;
 }
 
 body {
     background: #222;
     color: #ccc;
     font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
 }
-
-
 
 .main {
-    padding: 20px;
-    width: 80%;
+    padding: 50px 20px;
     max-width: 1116px;
     margin: auto;
+    padding-left: 360px;
 }
 h3 {
-    color: rgb(236, 196, 143);
-    font-size: 24px;
-    //border-bottom: 1px solid rgb(236, 143, 143);
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
- $orange: rgb(236, 196, 143);
- $red: rgb(236, 143, 143);
+h4 {
+    @extend h3;
+    font-size: 20px;
+}
+
+
+.info {
+    text-align: center;
+    max-width: 500px;
+    margin: 20px auto;    
+
+    &.info--small {
+        font-size: 18px;
+    }
+}
+
+.main__cards {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.main__card {
+    margin: 0 20px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid rgba(white, 0.2);
+    //border: 1px solid $color-primary;
+}
 
 .panel {
-    margin-top: 5px;
-    padding: 10px;
-    border: 1px solid $orange;
-    border-top-right-radius: 10px;
-    border-bottom: none;
-    border-left: none;
-    background: rgba(white, 0.1);
+    width: 100%;
+    
+    background: $color-primary;
+}
 
+.footer {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    background: $color-secondary;
+}
+
+.footer {height: 300px; }
+
+.reel, .video {
+    width: 100%;
+    height: 200px;
+    background: #111;
+    margin: 10px 0;
+    text-align: center;
+}
+
+
+
+.video {
+    height: 500px;margin-top: 50px;
+}
+
+.image {
+    @extend .video;
+    display: table-cell;
+    height: 200px;
+    width: 300px;
 }

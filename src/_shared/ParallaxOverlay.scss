@@ -1,4 +1,4 @@
-.parallax { position: fixed; }
+.parallax { position: fixed; pointer-events: none; }
 .parallax__achor { position: relative; }
 
 .parallax__image {
@@ -10,7 +10,12 @@
 
 
 #p_armor {
-  top: 200px;
+  top: 0;
   left: 0;
-  transform: translateX(-50%);
+  .parallax__image {
+    width: 400px;
+    height: auto;
+    transform: translateX(-50px);
+    //filter: drop-shadow(3px 3px 3px red);
+  }
 }

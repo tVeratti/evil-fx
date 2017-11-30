@@ -4,7 +4,7 @@
 */
 @import "https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:800|Ubuntu";
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, h3, h4, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -46,30 +46,84 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
 html, body {
   margin: 0;
   height: 100%; }
 
+#root {
+  min-width: 90px; }
+
 body {
   background: #222;
   color: #ccc;
-  font-family: 'Ubuntu', sans-serif; }
+  font-family: 'Ubuntu', sans-serif;
+  overflow-x: hidden; }
 
 .main {
-  padding: 20px;
-  width: 80%;
+  padding: 50px 20px;
   max-width: 1116px;
-  margin: auto; }
+  margin: auto;
+  padding-left: 360px; }
 
-h3 {
-  color: #ecc48f;
-  font-size: 24px; }
+h3, h4 {
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px; }
+
+h4 {
+  font-size: 20px; }
+
+.info {
+  text-align: center;
+  max-width: 500px;
+  margin: 20px auto; }
+  .info.info--small {
+    font-size: 18px; }
+
+.main__cards {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0; }
+
+.main__card {
+  margin: 0 20px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2); }
 
 .panel {
-  margin-top: 5px;
-  padding: 10px;
-  border: 1px solid #ecc48f;
-  border-top-right-radius: 10px;
-  border-bottom: none;
-  border-left: none;
-  background: rgba(255, 255, 255, 0.1); }
+  width: 100%;
+  background: #b43838; }
+
+.footer {
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  background: #111; }
+
+.footer {
+  height: 300px; }
+
+.reel, .video, .image {
+  width: 100%;
+  height: 200px;
+  background: #111;
+  margin: 10px 0;
+  text-align: center; }
+
+.video, .image {
+  height: 500px;
+  margin-top: 50px; }
+
+.image {
+  display: table-cell;
+  height: 200px;
+  width: 300px; }

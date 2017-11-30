@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 import './ParallaxOverlay.css';
 
 export default class extends Component {
-  defaultProps = {
+  static defaultProps = {
     id: 0,
-    speed: 0.05,
+    speed: 0.4,
     src: ''
   };
 
@@ -40,7 +40,9 @@ export default class extends Component {
     const height = image.offsetHeight;
     const bodyHeight = document.body.offsetHeight;
     const scrolltop = window.pageYOffset;
-    const top = `${-scrolltop * speed}px`;
+    const offset = -scrolltop * speed;
+    const top = `${offset}px`;
+    //if (height + offset > window.outerHeight)
     this.setState({ top });
   };
 }

@@ -1,0 +1,19 @@
+.parallax, .parallax__image {
+  position: fixed;
+  pointer-events: none; }
+
+.parallax__achor {
+  position: relative; }
+
+.parallax__image {
+  top: 0;
+  left: 0;
+  z-index: 99999; }
+
+#p_armor {
+  top: 0;
+  left: 0; }
+  #p_armor .parallax__image {
+    width: 400px;
+    height: auto;
+    transform: translateX(-50px); }

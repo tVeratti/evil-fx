@@ -2,11 +2,11 @@
   position: absolute;
   top: 0;
   width: 100%;
-  z-index: 100;
   color: white;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4); }
 
 .header__links {
+  height: 100%;
   color: #ccc; }
   .header__links a {
     display: inline-block;

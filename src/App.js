@@ -21,7 +21,7 @@ class App extends Component {
         <ParallaxOverlay id="armor" alt="Armor" src={src} trace={trace} />
 
         <div className="main main--right">
-          <h3 className="info">We specialize in custom Props and Costume Commision work for film, television, collectors and costumers.</h3>
+          <h3 className="info">We specialize in custom props and costume commision work for film, television, collectors and costumers.</h3>
           <p className="info info--small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a porta nisi, in vestibulum dolor. Nulla finibus volutpat ornare. Nullam ut accumsan massa, at lacinia risus. Maecenas et finibus velit. Phasellus sed nulla non nisl fermentum consequat. Integer ac lectus vel mauris porta vehicula ut eu eros.</p>
 
           <div className="main__cards">

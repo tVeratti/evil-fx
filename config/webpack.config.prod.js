@@ -141,8 +141,8 @@ module.exports = {
               {
                 loader: 'image-trace-loader',
                 options: {
-                  threshold: 254,
-                  color: '#333'
+                  // threshold: 254,
+                  // color: '#333'
                 }
               },
               { 

@@ -1,7 +1,7 @@
 @import "reset";
 @import "./_shared/colors";
 
-@import "https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:800|Ubuntu|EB_Garamond";
+@import "https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Noto+Serif|Ubuntu";
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
     box-sizing: border-box;
@@ -22,7 +22,7 @@ html, body {
 body {
     background: #222;
     color: #ccc;
-    font-family: 'EB Garamond', serif;
+    font-family: 'Noto Serif', serif;
     overflow-x: hidden;
     line-height: 1.3;
 }
@@ -111,4 +111,9 @@ h4 {
     display: table-cell;
     height: 200px;
     width: 300px;
+}
+
+
+@media screen and (min-width: 1115px) {
+
 }

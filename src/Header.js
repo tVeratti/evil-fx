@@ -10,16 +10,16 @@ export default class extends Component {
 
         return (
             <div className={className}>
-                <div className="header__logo">
-                    <h1>EVIL FX</h1>
-                    <h2>Props & Armor</h2>
-                </div>
                 <ul className="header__links">
                     <a href="#a">Home</a>
                     <a href="#b">News</a>
                     <a href="#c">Gallery</a>
                     <a href="#d">Contact</a>
                 </ul>
+                <div className="header__logo">
+                    <h1>EVIL FX</h1>
+                    <h2>Props & Armor</h2>
+                </div>
             </div>
         );
     }

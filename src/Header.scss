@@ -4,28 +4,22 @@
     position: fixed;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-start;
     top: 0;
     width: 100%;
-    padding: 20px;
     padding-left: 350px;
     color: $color-secondary;
     background: white;
+    
 }
 
 .header__links {
     height: 100%;
     color: inherit;
-    flex-grow: 2;
-    text-align: right;
 
     a {
         display: inline-block;
         padding: 20px;
-        color: $color-primary;
-        font-family: 'Noto Serif', serif;
-        font-weight: bold;
-        //border-bottom: 3px solid $color-secondary;
 
         &:link,
         &:visited,
@@ -35,7 +29,6 @@
 
           &:hover{
             color: $color-primary;
-            //border-color: $color-primary;
             }
         }        
     }
@@ -45,17 +38,17 @@
     padding: 0 20px;
     font-family: 'Alegreya Sans SC', sans-serif;
     font-weight: bold;
-    text-align: right;
+    text-align: center;
+    color: $color-primary;
 
     h1 {
         font-size: 60px;
-        color: $color-primary;
+        //color: $color-primary;
         transition: font-size 0.3s ease-in-out;
     }
 
     h2 {
         font-size: 24px;
-        color: $color-secondary;
         margin-top: -15px;
         transition: font-size 0.3s ease-in-out;
     }

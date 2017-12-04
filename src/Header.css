@@ -2,25 +2,19 @@
   position: fixed;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-start;
   top: 0;
   width: 100%;
-  padding: 20px;
   padding-left: 350px;
   color: #111;
   background: white; }
 
 .header__links {
   height: 100%;
-  color: inherit;
-  flex-grow: 2;
-  text-align: right; }
+  color: inherit; }
   .header__links a {
     display: inline-block;
-    padding: 20px;
-    color: #B43838;
-    font-family: 'Noto Serif', serif;
-    font-weight: bold; }
+    padding: 20px; }
     .header__links a:link, .header__links a:visited, .header__links a:active {
       color: inherit;
       text-decoration: none; }
@@ -31,14 +25,13 @@
   padding: 0 20px;
   font-family: 'Alegreya Sans SC', sans-serif;
   font-weight: bold;
-  text-align: right; }
+  text-align: center;
+  color: #B43838; }
   .header__logo h1 {
     font-size: 60px;
-    color: #B43838;
     transition: font-size 0.3s ease-in-out; }
   .header__logo h2 {
     font-size: 24px;
-    color: #111;
     margin-top: -15px;
     transition: font-size 0.3s ease-in-out; }
 

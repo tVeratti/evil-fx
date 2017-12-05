@@ -17,6 +17,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    opacity: 0.5;
 }
 
 $overlay-offset: 350px;
@@ -34,9 +35,15 @@ $overlay-offset: 350px;
     margin: 0 10px;
     border-radius: 100%;
     background: white;
-    border: none;
+    border: 1px solid rgba($color-secondary, 0.5);
     cursor: pointer;
     &:hover, &.carousel__dot--active {
         background: $color-primary;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .carousel__dots {
+        padding-right: 10px;
     }
 }

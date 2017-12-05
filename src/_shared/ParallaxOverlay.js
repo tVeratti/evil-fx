@@ -49,7 +49,7 @@ export default class extends Component {
     const { speed } = this.props;
     const scrolltop = window.pageYOffset;
     const offset = -scrolltop * speed;
-    const top = `${offset}px`;
+    const top = `${offset + 130}px`;
     this.setState({ top });
   };
 

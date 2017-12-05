@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { src } from './../images/gun.jpg';
+import { src, trace } from './../images/gun.jpg';
 import './Carousel.css';
 
 export default class extends Component {

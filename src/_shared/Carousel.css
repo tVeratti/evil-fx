@@ -12,7 +12,8 @@
   bottom: 0;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  opacity: 0.5; }
 
 .carousel__dots {
   position: absolute;
@@ -28,7 +29,11 @@
   margin: 0 10px;
   border-radius: 100%;
   background: white;
-  border: none;
+  border: 1px solid rgba(17, 17, 17, 0.5);
   cursor: pointer; }
   .carousel__dot:hover, .carousel__dot.carousel__dot--active {
     background: #B43838; }
+
+@media screen and (max-width: 650px) {
+  .carousel__dots {
+    padding-right: 10px; } }

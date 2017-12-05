@@ -136,7 +136,7 @@ module.exports = {
               {
                 loader: 'image-trace-loader',
                 options: {
-                  //threshold: 200,
+                  threshold: 254,
                   //color: '#333'
                 }
               },

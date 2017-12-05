@@ -19,7 +19,7 @@
     opacity: 0; }
 
 #p_armor {
-  top: 0;
+  top: 200px;
   left: 0; }
   #p_armor .parallax__image,
   #p_armor .parallax__trace {

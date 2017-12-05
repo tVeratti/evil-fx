@@ -15,15 +15,13 @@
   &.parallax__trace--hidden { opacity: 0; }
 }
 
-
 #p_armor {
-  top: 0;
+  top: 200px;
   left: 0;
   .parallax__image,
   .parallax__trace {
     width: 400px;
     height: auto;
     transform: translateX(-50px);
-    //filter: drop-shadow(3px 3px 3px red);
   }
 }

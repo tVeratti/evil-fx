@@ -1,51 +1,48 @@
 import React, { Component } from 'react';
 
 import Header from './Header.js';
-import ParallaxOverlay from './_shared/ParallaxOverlay.js';
-import { src, trace } from './images/evilfxarmor.png';
-import Carousel from './_shared/Carousel.js';
 
-// Line-height
-// Serif font for body
-// Justify main text
+import { src, trace } from './images/evilfxarmor.png';
+
+import ParallaxOverlay from './_shared/ParallaxOverlay.js';
+import Carousel from './_shared/Carousel.js';
+import Card from './home/Card.js';
 
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="content">
         <Carousel />
         <Header />
-
+        
         <ParallaxOverlay id="armor" alt="Armor" src={src} trace={trace} />
 
-        <div className="main main--right">
+        <div className="main">
           <h3 className="info">We specialize in custom props and costume commision work for film, television, collectors and costumers.</h3>
           <p className="info info--small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a porta nisi, in vestibulum dolor. Nulla finibus volutpat ornare. Nullam ut accumsan massa, at lacinia risus. Maecenas et finibus velit. Phasellus sed nulla non nisl fermentum consequat. Integer ac lectus vel mauris porta vehicula ut eu eros.</p>
 
-          <div className="main__cards">
-            <div className="main__card">
-              <h4>Hand Crafted</h4>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a porta nisi, in vestibulum dolor.
-            </div>
+          {/* Cards */}
+          <div className="cards">
 
-            <div className="main__card">
-              <h4>Hi-Tech</h4>
+            <Card header="Hand Crafted">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a porta nisi, in vestibulum dolor.
-            </div>
+            </Card>
+           
 
-            <div className="main__card">
-              <h4>Accurate</h4>
+            <Card header="Hi-Tech">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a porta nisi, in vestibulum dolor.
-            </div>
+            </Card>
+
+            <Card header="Accurate">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a porta nisi, in vestibulum dolor.
+            </Card>
           </div>
 
-          <div className="reel" />
           </div>
 
-          
-
+          {/* News Panel */}
           <div className="panel">
             <div className="main">
               <h3>News</h3>
@@ -59,7 +56,7 @@ class App extends Component {
           </div>
         </div>
 
-
+        {/* Footer */}
         <div className="footer">Footer</div>
       </div>
     );

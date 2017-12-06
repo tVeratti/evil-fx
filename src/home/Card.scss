@@ -1,3 +1,5 @@
+@import '../_shared/colors';
+
 .cards {
   display: flex;
   justify-content: center;
@@ -13,7 +15,9 @@
   overflow: hidden;
   text-align: center;
   color: white;
-  border: 1px solid #ccc;
+  background: $color-secondary;
+  border: 1px solid #333;
+  border-radius: 5px;
   
   &:first-child { margin-left: 0; }
   &:last-child { margin-right: 0; }
@@ -21,7 +25,7 @@
   &:hover {
     .card__image {
       transform: scale(1.2);
-      opacity: 0.2;
+      opacity: 0.5;
     }
 
     .card__body {
@@ -46,7 +50,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  opacity: 0.4;
+  opacity: 0.7;
   transition: all 0.5s ease-in-out;
 }
 

@@ -1,21 +1,36 @@
 import React, { Component } from 'react';
-import { src, trace } from './../images/gun.jpg';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
 import './Carousel.css';
 
 export default class extends Component {
   render(){
-    const style = { backgroundImage: `url(${src}` };
-
     return ( 
-      <div id="carousel" className="carousel" >
-        <div className="carousel__image" style={style} ref="image" />
-        <div className="carousel__dots">
-            <button className="carousel__dot carousel__dot--active" />
-            <button className="carousel__dot" />
-            <button className="carousel__dot" />
-            <button className="carousel__dot" />
+      <Carousel autoPlay={true} 
+        infiniteLoop={true}
+        interval={8000}
+        showArrows={false}
+        showThumbs={false}
+        showStatus={false}
+      >
+        <div>
+          <img src='http://via.placeholder.com/1900x500/333333' className='carousel__image' alt="a" />
         </div>
-      </div>
+        <div>
+          <img src='http://via.placeholder.com/1900x500/333333' className='carousel__image' alt="a" />
+        </div>
+        <div>
+          <img src='http://via.placeholder.com/1900x500/333333' className='carousel__image' alt="a" />
+        </div>
+        <div>
+          <img src='http://via.placeholder.com/1900x500/333333' className='carousel__image' alt="a" />
+        </div>
+      </Carousel>
     );
   };
+}
+
+function getStyle(src){
+  return { backgroundImage: `url(${src})` }; 
 }

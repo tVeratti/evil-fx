@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Header from './Header.js';
 
-import { src, trace } from './images/evilfxarmor.png';
+import armor from './images/evilfxarmor.png';
 
 import ParallaxOverlay from './_shared/ParallaxOverlay.js';
 import Carousel from './_shared/Carousel.js';
@@ -17,7 +17,7 @@ class App extends Component {
         <Carousel />
         <Header />
         
-        <ParallaxOverlay id="armor" alt="Armor" src={src} trace={trace} />
+        <ParallaxOverlay id="armor" alt="Armor" src={armor} />
 
         <div className="main">
           <h3 className="info">We specialize in custom props and costume commision work for film, television, collectors and costumers.</h3>

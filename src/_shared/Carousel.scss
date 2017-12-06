@@ -1,49 +1,23 @@
-
 @import 'colors';
 
-.carousel {
-    position: relative;
-    background: $color-secondary;
+.carousel__image {
     width: 100%;
     height: 500px;
+    object-fit: cover;
 }
+.carousel .control-dots {
+    padding-left: 260px;
+    .dot {
+        height: 20px;
+        width: 20px;
+        margin: 0 10px;
+        border-radius: 100%;
+        opacity: 1;
+        background: white;
+        cursor: pointer;
 
-.carousel__image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    opacity: 0.5;
-}
-
-$overlay-offset: 350px;
-.carousel__dots {
-    position: absolute;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    bottom: 10px;
-    padding: 10px 10px 10px $overlay-offset;
-}
-.carousel__dot {
-    height: 20px;
-    width: 20px;
-    margin: 0 10px;
-    border-radius: 100%;
-    background: white;
-    border: 1px solid rgba($color-secondary, 0.5);
-    cursor: pointer;
-    &:hover, &.carousel__dot--active {
-        background: $color-primary;
-    }
-}
-
-@media screen and (max-width: 650px) {
-    .carousel__dots {
-        padding-right: 10px;
+        &:hover, &.selected {
+            background: $color-primary;
+        }
     }
 }

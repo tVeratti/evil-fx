@@ -27,14 +27,6 @@ export default class extends Component {
             src={src}
             onLoad={this.loaded}
           />
-          { trace &&
-            <img className={traceClassName}
-              ref="trace"
-              style={{ top }}
-              alt={alt}
-              src={trace}
-            />
-          }
         </div>
       </div>
     );
@@ -49,7 +41,7 @@ export default class extends Component {
     const { speed } = this.props;
     const scrolltop = window.pageYOffset;
     const offset = -scrolltop * speed;
-    const top = `${offset + 130}px`;
+    const top = `${offset}px`;
     this.setState({ top });
   };
 

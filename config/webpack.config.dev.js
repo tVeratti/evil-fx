@@ -133,13 +133,13 @@ module.exports = {
           {
             test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
             use: [
-              {
-                loader: 'image-trace-loader',
-                options: {
-                  threshold: 254,
-                  //color: '#333'
-                }
-              },
+              // {
+              //   loader: 'image-trace-loader',
+              //   options: {
+              //     threshold: 254,
+              //     //color: '#333'
+              //   }
+              // },
               { 
                 loader: require.resolve('url-loader'),
                 options: {

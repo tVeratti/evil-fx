@@ -1,11 +1,9 @@
-import React, { Component } from 'react';
-
-import { src } from './../images/gun.jpg';
+import React from 'react';
 
 import './Card.css';
 
 export default props => {
-  const style = { backgroundImage: `url(${src})` };
+  const style = { backgroundImage: `url(http://via.placeholder.com/300x300/333333)` };
   return (
     <div className="card">
       <div className="card__image" style={style} />
